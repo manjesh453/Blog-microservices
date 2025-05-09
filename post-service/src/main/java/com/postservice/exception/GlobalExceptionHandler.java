@@ -28,4 +28,9 @@ public class GlobalExceptionHandler {
         ApiResponse apiResponse = new ApiResponse(message, false);
         return new ResponseEntity<>(apiResponse, HttpStatus.FORBIDDEN);
     }
+
+    @ExceptionHandler(ImageAlreadyFound.class)
+    public String imageAlreadyExistException(ImageAlreadyFound ex) {
+        return ex.getMessage();
+    }
 }

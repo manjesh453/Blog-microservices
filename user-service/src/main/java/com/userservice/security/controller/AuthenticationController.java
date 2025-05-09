@@ -42,7 +42,7 @@ public class AuthenticationController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/changeUserPassword/{email}")
+    @GetMapping("/admin/changeUserPassword/{email}")
     public String changeUserPassword(@PathVariable String email,HttpServletRequest request) throws MessagingException, UnsupportedEncodingException {
         return authenticationService.changeUserPassword(email,getSiteURL(request));
     }

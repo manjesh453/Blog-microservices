@@ -1,5 +1,7 @@
 package com.postservice.service.impl;
 
+import com.postservice.exception.DataNotFoundException;
+import com.postservice.exception.ImageAlreadyFound;
 import com.postservice.service.FileService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -19,7 +21,11 @@ public class FileServiceImpl implements FileService {
         if (!f.exists()) {
             f.mkdir();
         }
-        Files.copy(file.getInputStream(), Paths.get(filePath));
+        try {
+            Files.copy(file.getInputStream(), Paths.get(filePath));
+        }catch (Exception e){
+            throw new ImageAlreadyFound("Sorry image could not be uploaded");
+        }
         return fileName;
     }
 

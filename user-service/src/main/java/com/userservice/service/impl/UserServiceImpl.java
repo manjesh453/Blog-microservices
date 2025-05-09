@@ -100,7 +100,7 @@ public class UserServiceImpl implements UserService {
         String subject = MessageConstant.subject;
         String content = "Dear " + customer.getUsername() + "<br>"
                 + "Please click the link below to verify your account:<br>"
-                + "<h3><a href=\"[[URL]]\" target=\"_self\">VERIFY</a></h3>"
+                + "<h3><a href=\"[[URL]]\" target=\"_self\">"+ customer.getVerificationCode()+"</a></h3>"
                 + "Thank you,<br>"
                 + "Blog Posting.";
 

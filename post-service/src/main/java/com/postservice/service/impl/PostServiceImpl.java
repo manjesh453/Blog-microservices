@@ -18,6 +18,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -117,5 +119,13 @@ public class PostServiceImpl implements PostService {
      }catch (Exception e) {
          log.error("Error occur while performing add operation "+e.getMessage());
      }
+    }
+
+    @Override
+    public List<PostResponseDto> getPostsForUnauthorizedUser() {
+        PageRequest pageRequest = PageRequest.of(0, 10);
+        Page<Post> posts = postRepo.findAll(pageRequest);
+        return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
+
     }
 }

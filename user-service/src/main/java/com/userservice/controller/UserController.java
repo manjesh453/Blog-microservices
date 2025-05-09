@@ -24,20 +24,19 @@ public class UserController {
         return userService.updateUser(user, userId);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/delete/{userId}")
     public String deleteUserStatus(@PathVariable Long userId) {
         return userService.deleteUser(userId);
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/getAll")
+    @GetMapping("/admin/getAll")
     public List<UserResponseDto> getAllUsers() {
         return userService.getAllUsers();
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/verifyUser/{userId}")
+    @GetMapping("/admin/verifyUser/{userId}")
     public String verifyUser(@PathVariable Long userId) {
         return userService.changeStatusToActive(userId);
     }
@@ -48,13 +47,13 @@ public class UserController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/getByStatus/{status}")
+    @GetMapping("/admin/getByStatus/{status}")
     public List<UserResponseDto> getUsersByStatus(@PathVariable String status) {
         return userService.findByStatus(Status.valueOf(status));
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/filterByDate")
+    @PostMapping("/admin/filterByDate")
     public List<UserResponseDto> filterUsersByDate(@RequestBody DateRequestDto dateDto) {
         return userService.findUserByTime(dateDto.getStartDate(), dateDto.getEndDate());
     }
@@ -69,7 +68,7 @@ public class UserController {
         return userService.getUserByEmail(email);
     }
 
-    @GetMapping("/countOfUsers")
+    @GetMapping("/admin/countOfUsers")
     public Map<String,Integer> getAllUserByCount() {
         return userService.getUserByCount();
     }
