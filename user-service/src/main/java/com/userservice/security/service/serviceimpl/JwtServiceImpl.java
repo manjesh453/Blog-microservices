@@ -22,7 +22,7 @@ import java.util.function.Function;
 @RequiredArgsConstructor
 public class JwtServiceImpl implements JwtService {
     private final UserRepo userRepository;
-    private final String SECRET = "413F4428472B4B6250655368566D5970337336763979244226452948404D6351";
+    private final String SECRET = "7656535497985735324367097097986534536486880986644522397865464654";
 
     private final Key jwtSigningKey = Keys.hmacShaKeyFor(hexStringToByteArray(SECRET));
 

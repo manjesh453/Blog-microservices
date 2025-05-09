@@ -19,7 +19,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/post/")
+@RequestMapping("/api/post")
 @RequiredArgsConstructor
 public class PostController {
 
@@ -76,5 +76,10 @@ public class PostController {
         InputStream resource=this.fileService.getResource(path, imageName);
         response.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(resource,response.getOutputStream());
+    }
+
+    @GetMapping("/postForUnauthorized")
+    public List<PostResponseDto> getPostForUnauthorizedUser() {
+        return postService.getPostsForUnauthorizedUser();
     }
 }

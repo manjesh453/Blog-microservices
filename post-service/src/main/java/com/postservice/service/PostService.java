@@ -28,4 +28,6 @@ public interface PostService {
     List<PostResponseDto> searchPostsByTitle(String keyword);
 
     void addLikeOnPost(String postId);
+
+    List<PostResponseDto> getPostsForUnauthorizedUser();
 }

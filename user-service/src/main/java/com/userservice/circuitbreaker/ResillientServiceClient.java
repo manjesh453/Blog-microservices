@@ -4,6 +4,7 @@ import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -18,19 +19,16 @@ public class ResillientServiceClient {
         this.circuitBreakerFactory = circuitBreakerFactory;
     }
 
-    public Object callService(String url, HttpMethod method, HttpEntity<Object> requestEntity) {
+    public <T> ResponseEntity<T> callService(String url, HttpMethod method, HttpEntity<?> requestEntity, Class<T> responseType) {
         CircuitBreaker circuitBreaker = circuitBreakerFactory.create("serviceCircuitBreaker");
 
         return circuitBreaker.run(
-                () -> {
-                    ResponseEntity<Object> response = restTemplate.exchange(url, method, requestEntity, Object.class);
-                    return response;
-                },
-                throwable -> handleError(throwable)
+                () -> restTemplate.exchange(url, method, requestEntity, responseType),
+                throwable -> new ResponseEntity<>(handleError(throwable), HttpStatus.SERVICE_UNAVAILABLE)
         );
     }
 
-    private String handleError(Throwable throwable) {
-        return "Fallback response due to: " + throwable.getMessage();
+    private <T> T handleError(Throwable throwable) {
+        throw new RuntimeException("Fallback response due to: " + throwable.getMessage());
     }
 }
