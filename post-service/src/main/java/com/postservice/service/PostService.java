@@ -4,13 +4,14 @@ import com.postservice.dto.PostRequestDto;
 import com.postservice.dto.PostResponseDto;
 import com.postservice.shared.Status;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface PostService {
 
     String createPost(PostRequestDto postDto, String fileName);
 
-    String updatePost(PostRequestDto postDto,String fileName,Long postId);
+    String updatePost(PostRequestDto postDto,String fileName,Long postId) throws IOException;
 
     String deletePost(Long postId);
 

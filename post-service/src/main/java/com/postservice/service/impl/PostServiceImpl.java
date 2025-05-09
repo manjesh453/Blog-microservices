@@ -10,14 +10,17 @@ import com.postservice.exception.DataNotFoundException;
 import com.postservice.exception.ResourcenotFoundException;
 import com.postservice.repo.PostRepo;
 import com.postservice.service.CategoryService;
+import com.postservice.service.FileService;
 import com.postservice.service.PostService;
 import com.postservice.shared.Status;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 @Service
@@ -28,6 +31,9 @@ public class PostServiceImpl implements PostService {
     private final ModelMapper modelMapper;
     private final CategoryService categoryService;
     private final ObjectMapper objectMapper;
+    private final FileService fileService;
+    @Value("${project.image}")
+    private String path;
 
     @Override
     public String createPost(PostRequestDto postDto, String fileName) {
@@ -43,11 +49,12 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public String updatePost(PostRequestDto postDto, String fileName, Long postId) {
+    public String updatePost(PostRequestDto postDto, String fileName, Long postId) throws IOException {
         Post post = postRepo.findById(postId).orElseThrow(() -> new ResourcenotFoundException("Post", "postId", postId));
         if (post.getUserId() != postDto.getUserId()) {
            throw new DataNotFoundException("You do not have permission to update this post");
         }
+        fileService.deleteImage(path,post.getImageName());
         post.setTitle(postDto.getTitle());
         post.setContent(postDto.getContent());
         post.setImageName(fileName);

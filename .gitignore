@@ -35,6 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
-
-logs/
-images/
+images
+logs
