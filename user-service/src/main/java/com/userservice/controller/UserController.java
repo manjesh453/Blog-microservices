@@ -29,33 +29,9 @@ public class UserController {
         return userService.deleteUser(userId);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/admin/getAll")
-    public List<UserResponseDto> getAllUsers() {
-        return userService.getAllUsers();
-    }
-
-    @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/admin/verifyUser/{userId}")
-    public String verifyUser(@PathVariable Long userId) {
-        return userService.changeStatusToActive(userId);
-    }
-
     @GetMapping("/getById/{userId}")
     public UserResponseDto getUserById(@PathVariable Long userId) {
         return userService.getUserById(userId);
-    }
-
-    @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping("/admin/getByStatus/{status}")
-    public List<UserResponseDto> getUsersByStatus(@PathVariable String status) {
-        return userService.findByStatus(Status.valueOf(status));
-    }
-
-    @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/admin/filterByDate")
-    public List<UserResponseDto> filterUsersByDate(@RequestBody DateRequestDto dateDto) {
-        return userService.findUserByTime(dateDto.getStartDate(), dateDto.getEndDate());
     }
 
     @PostMapping("/changePassword/{email}")

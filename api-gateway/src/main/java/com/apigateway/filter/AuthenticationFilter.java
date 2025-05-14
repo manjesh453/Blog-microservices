@@ -8,6 +8,8 @@ import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFac
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractGatewayFilterFactory.NameConfig> {
@@ -35,6 +37,11 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractG
                 }
                 try {
                     jwtUtil.validateToken(authHeader);
+                    List<String> roles = jwtUtil.extractRoles(authHeader);
+                    String path = exchange.getRequest().getPath().toString();
+                    if (path.startsWith("/admin") && (roles == null || !roles.contains("ADMIN"))) {
+                        throw new NotFoundException("Forbidden: ADMIN role required");
+                    }
 
                 } catch (Exception e) {
                     throw new NotFoundException("Unauthorized access to application");
