@@ -31,6 +31,7 @@ public class BootStrapAdmin implements CommandLineRunner {
                     .status(Status.ACTIVE)
                     .contactNumber("9999999999")
                     .address("UK")
+                    .description("Super Admin")
                     .lastPasswordChanged(new Date())
                     .build();
 

@@ -54,6 +54,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.USER).status(Status.UNVERIFIED)
                 .lastPasswordChanged(new Date())
+                .description(request.getDescription())
                 .contactNumber(request.getContactNumber())
                 .address(request.getAddress())
                 .verificationCode(new Random().nextInt(999999))

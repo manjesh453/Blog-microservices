@@ -27,8 +27,13 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractG
     public GatewayFilter apply(NameConfig config) {
         return ((exchange, chain) -> {
             if (validator.isSecured.test(exchange.getRequest())) {
+                String path = exchange.getRequest().getPath().toString();
+                if (path.startsWith("/api/post/image/")|| path.startsWith("/api/post/getById/")) {
+                    return chain.filter(exchange);
+                }
+
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
-                    throw new RuntimeException("missing authorization header");
+                    throw new NotFoundException("missing authorization header");
                 }
 
                 String authHeader = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
@@ -38,7 +43,6 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractG
                 try {
                     jwtUtil.validateToken(authHeader);
                     List<String> roles = jwtUtil.extractRoles(authHeader);
-                    String path = exchange.getRequest().getPath().toString();
                     if (path.startsWith("/admin") && (roles == null || !roles.contains("ADMIN"))) {
                         throw new NotFoundException("Forbidden: ADMIN role required");
                     }
