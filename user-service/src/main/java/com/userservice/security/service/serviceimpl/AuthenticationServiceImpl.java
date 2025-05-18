@@ -49,8 +49,10 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     public String signup(SignUpRequest request, String siteURL) throws MessagingException, UnsupportedEncodingException {
         var user = Users.builder().fullname(request.getFirstname() + " " + request.getLastname())
                 .email(request.getEmail())
+                .id(null)
                 .firstname(request.getFirstname())
                 .lastname(request.getLastname())
+                .fullname(request.getFirstname()+" "+request.getLastname())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.USER).status(Status.UNVERIFIED)
                 .lastPasswordChanged(new Date())
