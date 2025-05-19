@@ -2,6 +2,8 @@ package com.postservice.dto;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class PostResponseDto {
     private Long id;
@@ -17,4 +19,6 @@ public class PostResponseDto {
     private Long categoryId;
 
     private Long likes;
+
+    private Date createdDate;
 }
