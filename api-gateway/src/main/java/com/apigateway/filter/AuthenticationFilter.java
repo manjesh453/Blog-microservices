@@ -43,7 +43,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractG
                 try {
                     jwtUtil.validateToken(authHeader);
                     List<String> roles = jwtUtil.extractRoles(authHeader);
-                    if (path.startsWith("/admin") && (roles == null || !roles.contains("ADMIN"))) {
+                    if (path.startsWith("/test") && (roles == null || !roles.contains("ADMIN"))) {
                         throw new NotFoundException("Forbidden: ADMIN role required");
                     }
 
