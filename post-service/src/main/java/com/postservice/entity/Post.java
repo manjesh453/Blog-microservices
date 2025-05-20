@@ -35,7 +35,7 @@ public class Post {
 
     private String imageName;
 
-    private Category categoryId;
+    private Category category;
 
     private Long userId;
 

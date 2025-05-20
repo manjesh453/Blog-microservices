@@ -17,7 +17,7 @@ public class PostResponseDto {
 
     private Long userId;
 
-    private Category categoryId;
+    private Category category;
 
     private Long likes;
 
