@@ -1,5 +1,5 @@
 package com.postservice.shared;
 
 public enum Category {
-    FOOD,SPORTS,OTHERS
+    FOOD,SPORTS,OTHERS,POLITICS,TECHNOLOGY,BUSINESS
 }
