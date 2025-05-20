@@ -1,5 +1,6 @@
 package com.reviewservice.service.impl;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.reviewservice.Repo.CommentRepo;
 import com.reviewservice.dto.CommentRequestDto;
 import com.reviewservice.dto.CommentResponseDto;
@@ -20,10 +21,11 @@ public class CommentServiceImpl implements CommentService {
 
     private final CommentRepo commentRepo;
     private final ModelMapper modelMapper;
+    private final ObjectMapper objectMapper;
 
     @Override
     public String addComment(CommentRequestDto commentDto) {
-        Comment comment = modelMapper.map(commentDto, Comment.class);
+        Comment comment = objectMapper.convertValue(commentDto, Comment.class);
         comment.setStatus(Status.ACTIVE);
         commentRepo.save(comment);
         return "Comment added successfully";
