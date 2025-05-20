@@ -11,5 +11,5 @@ public class PostRequestDto {
 
     private Long userId;
 
-    private Category category;
+    private Category categoryId;
 }
