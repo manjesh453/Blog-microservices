@@ -21,4 +21,6 @@ public interface PostRepo extends JpaRepository<Post, Long> {
     List<Post>findByKeyword(String keyword);
 
     Page<Post> findAll(Pageable pageable);
+
+    List<Post> findPostByStatus(Status status);
 }

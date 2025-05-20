@@ -28,7 +28,8 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<AbstractG
         return ((exchange, chain) -> {
             if (validator.isSecured.test(exchange.getRequest())) {
                 String path = exchange.getRequest().getPath().toString();
-                if (path.startsWith("/api/post/image/")|| path.startsWith("/api/post/getById/")) {
+                if (path.startsWith("/api/post/image/")|| path.startsWith("/api/post/getById/")
+                        || path.startsWith("/api/post/postForUnauthorized ")) {
                     return chain.filter(exchange);
                 }
 

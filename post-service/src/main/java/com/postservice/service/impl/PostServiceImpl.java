@@ -74,7 +74,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<PostResponseDto> getAllPost() {
-        List<Post> posts = postRepo.findAll();
+        List<Post> posts = postRepo.findPostByStatus(Status.ACTIVE);
         return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
     }
 

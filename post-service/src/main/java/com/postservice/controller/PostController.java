@@ -82,4 +82,9 @@ public class PostController {
     public List<PostResponseDto> getPostForUnauthorizedUser() {
         return postService.getPostsForUnauthorizedUser();
     }
+
+    @GetMapping("/getAll")
+    public List<PostResponseDto> getAllPost() {
+        return postService.getAllPost();
+    }
 }
