@@ -1,5 +1,6 @@
 package com.postservice.dto;
 
+import com.postservice.shared.Category;
 import lombok.Data;
 
 @Data
@@ -10,5 +11,5 @@ public class PostRequestDto {
 
     private Long userId;
 
-    private Long categoryId;
+    private Category categoryId;
 }

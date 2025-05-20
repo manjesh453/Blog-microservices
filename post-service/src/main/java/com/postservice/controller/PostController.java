@@ -5,6 +5,7 @@ import com.postservice.dto.PostRequestDto;
 import com.postservice.dto.PostResponseDto;
 import com.postservice.service.FileService;
 import com.postservice.service.PostService;
+import com.postservice.shared.Category;
 import com.postservice.shared.Status;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -52,12 +53,12 @@ public class PostController {
     }
 
     @GetMapping("/getPostByCategoryForUser/{categoryId}")
-    public List<PostResponseDto> getPostByCategoryForUsers(@PathVariable Long categoryId) {
+    public List<PostResponseDto> getPostByCategoryForUsers(@PathVariable Category categoryId) {
         return postService.getPostsByCategoryForUsers(categoryId);
     }
 
     @GetMapping("/getPostByCategoryForAdmin/{categoryId}")
-    public List<PostResponseDto> getPostByCategoryForAdmin(@PathVariable Long categoryId, @RequestBody String status) {
+    public List<PostResponseDto> getPostByCategoryForAdmin(@PathVariable Category categoryId, @RequestBody String status) {
         return postService.getPostsByCategoryForAdmin(categoryId, Status.valueOf(status));
     }
 

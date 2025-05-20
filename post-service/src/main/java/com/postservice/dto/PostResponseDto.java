@@ -1,5 +1,6 @@
 package com.postservice.dto;
 
+import com.postservice.shared.Category;
 import lombok.Data;
 
 import java.util.Date;
@@ -16,7 +17,7 @@ public class PostResponseDto {
 
     private Long userId;
 
-    private Long categoryId;
+    private Category categoryId;
 
     private Long likes;
 

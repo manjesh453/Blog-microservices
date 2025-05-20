@@ -2,16 +2,15 @@ package com.postservice.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.postservice.conf.RabbitMQConfig;
-import com.postservice.dto.CategoryResponseDto;
 import com.postservice.dto.PostRequestDto;
 import com.postservice.dto.PostResponseDto;
 import com.postservice.entity.Post;
 import com.postservice.exception.DataNotFoundException;
 import com.postservice.exception.ResourcenotFoundException;
 import com.postservice.repo.PostRepo;
-import com.postservice.service.CategoryService;
 import com.postservice.service.FileService;
 import com.postservice.service.PostService;
+import com.postservice.shared.Category;
 import com.postservice.shared.Status;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -31,18 +30,13 @@ import java.util.List;
 public class PostServiceImpl implements PostService {
     private final PostRepo postRepo;
     private final ModelMapper modelMapper;
-    private final CategoryService categoryService;
-    private final ObjectMapper objectMapper;
+        private final ObjectMapper objectMapper;
     private final FileService fileService;
     @Value("${project.image}")
     private String path;
 
     @Override
     public String createPost(PostRequestDto postDto, String fileName) {
-        CategoryResponseDto category = categoryService.getCategory(postDto.getCategoryId());
-        if (category == null) {
-            throw new DataNotFoundException("Category not found");
-        }
         Post post = objectMapper.convertValue(postDto, Post.class);
         post.setImageName(fileName);
         post.setStatus(Status.ACTIVE);
@@ -85,13 +79,13 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public List<PostResponseDto> getPostsByCategoryForUsers(Long categoryId) {
+    public List<PostResponseDto> getPostsByCategoryForUsers(Category categoryId) {
         List<Post> posts = postRepo.findByCategoryIdAndStatus(categoryId,Status.ACTIVE);
         return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
     }
 
     @Override
-    public List<PostResponseDto> getPostsByCategoryForAdmin(Long categoryId, Status status) {
+    public List<PostResponseDto> getPostsByCategoryForAdmin(Category categoryId, Status status) {
         List<Post> posts = postRepo.findByCategoryIdAndStatus(categoryId,status);
         return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
     }

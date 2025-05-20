@@ -2,6 +2,7 @@ package com.postservice.service;
 
 import com.postservice.dto.PostRequestDto;
 import com.postservice.dto.PostResponseDto;
+import com.postservice.shared.Category;
 import com.postservice.shared.Status;
 
 import java.io.IOException;
@@ -19,9 +20,9 @@ public interface PostService {
 
     PostResponseDto getPostById(Long postId);
 
-    List<PostResponseDto> getPostsByCategoryForUsers(Long categoryId);
+    List<PostResponseDto> getPostsByCategoryForUsers(Category categoryId);
 
-    List<PostResponseDto> getPostsByCategoryForAdmin(Long categoryId, Status status);
+    List<PostResponseDto> getPostsByCategoryForAdmin(Category categoryId, Status status);
 
     List<PostResponseDto> getPostsByUser(Long userId);
 

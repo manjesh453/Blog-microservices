@@ -1,5 +1,6 @@
 package com.postservice.entity;
 
+import com.postservice.shared.Category;
 import com.postservice.shared.Status;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -34,7 +35,7 @@ public class Post {
 
     private String imageName;
 
-    private Long categoryId;
+    private Category categoryId;
 
     private Long userId;
 
