@@ -80,13 +80,13 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<PostResponseDto> getPostsByCategoryForUsers(Category categoryId) {
-        List<Post> posts = postRepo.findByCategoryAndStatus(categoryId,Status.ACTIVE);
+        List<Post> posts = postRepo.findByCategoryIdAndStatus(categoryId,Status.ACTIVE);
         return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
     }
 
     @Override
     public List<PostResponseDto> getPostsByCategoryForAdmin(Category categoryId, Status status) {
-        List<Post> posts = postRepo.findByCategoryAndStatus(categoryId,status);
+        List<Post> posts = postRepo.findByCategoryIdAndStatus(categoryId,status);
         return posts.stream().map(list -> modelMapper.map(list, PostResponseDto.class)).toList();
     }
 
