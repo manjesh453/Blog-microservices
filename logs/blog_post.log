@@ -1,23 +1,23 @@
-2025-05-13_14:15:29.476 [main] INFO  com.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.5 with PID 41440 (C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice\post-service\build\classes\java\main started by Manjesh-Rayamajhi in C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice)
-2025-05-13_14:15:29.495 [main] INFO  com.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-13_14:15:31.095 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-13_14:15:31.289 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 2 JPA repository interfaces.
-2025-05-13_14:15:31.579 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=71f5739c-857b-30c3-ace0-04bd9e85efe1
-2025-05-13_14:15:32.075 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
-2025-05-13_14:15:32.091 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
-2025-05-13_14:15:32.093 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-13_14:15:32.093 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-13_14:15:32.215 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-13_14:15:32.215 [main] INFO  o.s.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2569 ms
-2025-05-13_14:15:32.423 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-13_14:15:32.514 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-13_14:15:32.571 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-13_14:15:33.030 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-13_14:15:33.083 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-13_14:15:33.539 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71eafb64
-2025-05-13_14:15:33.542 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-13_14:15:33.621 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-13_14:15:33.643 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-05-20_00:50:59.730 [main] INFO  com.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.5 with PID 32564 (C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice\post-service\build\classes\java\main started by Manjesh-Rayamajhi in C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice)
+2025-05-20_00:50:59.749 [main] INFO  com.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20_00:51:03.110 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20_00:51:03.661 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 516 ms. Found 2 JPA repository interfaces.
+2025-05-20_00:51:04.477 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=71f5739c-857b-30c3-ace0-04bd9e85efe1
+2025-05-20_00:51:05.596 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2025-05-20_00:51:05.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2025-05-20_00:51:05.634 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20_00:51:05.635 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-20_00:51:05.937 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-20_00:51:05.939 [main] INFO  o.s.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6068 ms
+2025-05-20_00:51:06.433 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20_00:51:06.589 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-20_00:51:06.690 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-20_00:51:07.531 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-20_00:51:07.636 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-20_00:51:08.616 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3494a35e
+2025-05-20_00:51:08.622 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-20_00:51:08.849 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-20_00:51:08.931 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.36
@@ -25,208 +25,114 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-13_14:15:35.532 [main] INFO  o.h.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-13_14:15:35.653 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:15:36.191 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-13_14:15:37.202 [main] WARN  o.s.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-13_14:15:37.262 [main] INFO  o.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-13_14:15:38.170 [main] INFO  o.s.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2025-05-13_14:15:38.215 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-13_14:15:38.348 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
-2025-05-13_14:15:38.389 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 56393 (http) with context path '/'
-2025-05-13_14:15:38.392 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 56393
-2025-05-13_14:15:38.403 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2025-05-13_14:15:38.439 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2025-05-13_14:15:38.444 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
-2025-05-13_14:15:38.456 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2025-05-13_14:15:38.928 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
-2025-05-13_14:15:38.931 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2025-05-13_14:15:38.934 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-13_14:15:38.936 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1747125038935 with initial instances count: 2
-2025-05-13_14:15:38.941 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
-2025-05-13_14:15:38.942 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125038942, current=UP, previous=STARTING]
-2025-05-13_14:15:38.944 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:0: registering service...
-2025-05-13_14:15:38.953 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
-2025-05-13_14:15:39.035 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:0 - registration status: 204
-2025-05-13_14:15:39.269 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#321b2469:0/SimpleConnection@63b15742 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56396]
-2025-05-13_14:15:39.280 [main] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
-2025-05-13_14:15:39.377 [main] INFO  com.postservice.PostServiceApplication - Started PostServiceApplication in 10.989 seconds (process running for 13.588)
-2025-05-13_14:17:22.626 [SpringApplicationShutdownHook] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application POST-SERVICE with eureka with status DOWN
-2025-05-13_14:17:22.626 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125142626, current=DOWN, previous=UP]
-2025-05-13_14:17:22.627 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:0: registering service...
-2025-05-13_14:17:22.633 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
-2025-05-13_14:17:22.644 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:0 - registration status: 204
-2025-05-13_14:17:23.217 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
-2025-05-13_14:17:23.219 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-13_14:17:23.226 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-13_14:17:23.237 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:17:23.239 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-13_14:17:23.252 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-13_14:17:23.253 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-2025-05-13_14:17:26.257 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
-2025-05-13_14:17:26.277 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:0 - deregister  status: 200
-2025-05-13_14:17:26.278 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-2025-05-13_14:17:32.507 [main] INFO  com.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.5 with PID 24388 (C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice\post-service\build\classes\java\main started by Manjesh-Rayamajhi in C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice)
-2025-05-13_14:17:32.510 [main] INFO  com.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-13_14:17:33.958 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-13_14:17:34.179 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209 ms. Found 2 JPA repository interfaces.
-2025-05-13_14:17:34.505 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=71f5739c-857b-30c3-ace0-04bd9e85efe1
-2025-05-13_14:17:34.956 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
-2025-05-13_14:17:34.970 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2025-05-13_14:17:34.972 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-13_14:17:34.972 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-13_14:17:35.058 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-13_14:17:35.058 [main] INFO  o.s.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2449 ms
-2025-05-13_14:17:35.276 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-13_14:17:35.343 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-13_14:17:35.382 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-13_14:17:35.727 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-13_14:17:35.761 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-13_14:17:36.092 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71eafb64
-2025-05-13_14:17:36.095 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-13_14:17:36.164 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-13_14:17:36.184 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.36
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-13_14:17:37.308 [main] INFO  o.h.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-13_14:17:37.374 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:17:37.763 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-13_14:17:39.299 [main] WARN  o.s.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-13_14:17:39.421 [main] INFO  o.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-13_14:17:41.094 [main] INFO  o.s.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2025-05-13_14:17:41.201 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-13_14:17:41.457 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2025-05-13_14:17:41.522 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2025-05-13_14:17:41.532 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-05-13_14:17:41.556 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
-2025-05-13_14:17:41.556 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2025-05-13_14:17:41.556 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2025-05-13_14:17:41.557 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
-2025-05-13_14:17:41.557 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2025-05-13_14:17:41.557 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
-2025-05-13_14:17:41.557 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2025-05-13_14:17:42.518 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
-2025-05-13_14:17:42.522 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2025-05-13_14:17:42.528 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-13_14:17:42.532 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1747125162530 with initial instances count: 2
-2025-05-13_14:17:42.542 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
-2025-05-13_14:17:42.546 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125162545, current=UP, previous=STARTING]
-2025-05-13_14:17:42.549 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2025-05-13_14:17:42.550 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
-2025-05-13_14:17:42.637 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
-2025-05-13_14:17:42.639 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8888
-2025-05-13_14:17:42.658 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
-2025-05-13_14:17:42.699 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
-2025-05-13_14:17:42.836 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#36d9efa6:0/SimpleConnection@3389c69d [delegate=amqp://guest@127.0.0.1:5672/, localPort=56552]
-2025-05-13_14:17:42.857 [main] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
-2025-05-13_14:17:42.999 [main] INFO  com.postservice.PostServiceApplication - Started PostServiceApplication in 11.342 seconds (process running for 12.851)
-2025-05-13_14:17:45.959 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-13_14:17:45.959 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-13_14:17:45.962 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-05-13_14:17:47.307 [http-nio-8888-exec-10] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 770 ms
-2025-05-13_14:19:21.808 [SpringApplicationShutdownHook] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application POST-SERVICE with eureka with status DOWN
-2025-05-13_14:19:21.808 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125261808, current=DOWN, previous=UP]
-2025-05-13_14:19:21.809 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
-2025-05-13_14:19:21.815 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
-2025-05-13_14:19:21.827 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
-2025-05-13_14:19:22.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
-2025-05-13_14:19:22.794 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-13_14:19:22.800 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-13_14:19:22.812 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:19:22.814 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-13_14:19:22.827 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-13_14:19:22.827 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-2025-05-13_14:19:25.835 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
-2025-05-13_14:19:25.864 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - deregister  status: 200
-2025-05-13_14:19:25.865 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
-2025-05-13_14:19:35.813 [main] INFO  com.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.5 with PID 35704 (C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice\post-service\build\classes\java\main started by Manjesh-Rayamajhi in C:\Users\Manjesh-Rayamajhi\Desktop\Blog-microservice)
-2025-05-13_14:19:35.817 [main] INFO  com.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-13_14:19:37.125 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-13_14:19:37.310 [main] INFO  o.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173 ms. Found 2 JPA repository interfaces.
-2025-05-13_14:19:37.602 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=71f5739c-857b-30c3-ace0-04bd9e85efe1
-2025-05-13_14:19:38.013 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
-2025-05-13_14:19:38.039 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2025-05-13_14:19:38.046 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-13_14:19:38.047 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-13_14:19:38.131 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-13_14:19:38.131 [main] INFO  o.s.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2225 ms
-2025-05-13_14:19:38.320 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-13_14:19:38.385 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-13_14:19:38.442 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-13_14:19:38.828 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-13_14:19:38.863 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-13_14:19:39.282 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71eafb64
-2025-05-13_14:19:39.284 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-13_14:19:39.372 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-13_14:19:39.414 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.36
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-13_14:19:41.391 [main] INFO  o.h.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-13_14:19:41.676 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:19:43.983 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-13_14:19:46.205 [main] WARN  o.s.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-13_14:19:46.316 [main] INFO  o.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-13_14:19:47.775 [main] INFO  o.s.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2025-05-13_14:19:47.862 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-13_14:19:48.071 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2025-05-13_14:19:48.140 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2025-05-13_14:19:48.148 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-05-13_14:19:48.168 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
-2025-05-13_14:19:48.169 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2025-05-13_14:19:48.169 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2025-05-13_14:19:48.169 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
-2025-05-13_14:19:48.169 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2025-05-13_14:19:48.169 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
-2025-05-13_14:19:48.170 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2025-05-13_14:19:49.047 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
-2025-05-13_14:19:49.051 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2025-05-13_14:19:49.056 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-13_14:19:49.062 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1747125289058 with initial instances count: 2
-2025-05-13_14:19:49.072 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
-2025-05-13_14:19:49.073 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125289073, current=UP, previous=STARTING]
-2025-05-13_14:19:49.077 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2025-05-13_14:19:49.078 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
-2025-05-13_14:19:49.145 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
-2025-05-13_14:19:49.147 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8888
-2025-05-13_14:19:49.163 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
-2025-05-13_14:19:49.206 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
-2025-05-13_14:19:49.326 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#19b8bcb5:0/SimpleConnection@410ca583 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56730]
-2025-05-13_14:19:49.347 [main] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
-2025-05-13_14:19:49.488 [main] INFO  com.postservice.PostServiceApplication - Started PostServiceApplication in 14.571 seconds (process running for 15.96)
-2025-05-13_14:24:48.186 [AsyncResolver-bootstrap-executor-%d] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-05-13_14:27:30.073 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-13_14:27:30.073 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-13_14:27:30.076 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-05-13_14:27:45.902 [SpringApplicationShutdownHook] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application POST-SERVICE with eureka with status DOWN
-2025-05-13_14:27:45.902 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747125765902, current=DOWN, previous=UP]
-2025-05-13_14:27:45.902 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
-2025-05-13_14:27:45.918 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
-2025-05-13_14:27:45.919 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
-2025-05-13_14:27:46.362 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
-2025-05-13_14:27:46.364 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-13_14:27:46.370 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-13_14:27:46.383 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-13_14:27:46.386 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-13_14:27:46.402 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-13_14:27:46.404 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-2025-05-13_14:27:49.412 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
-2025-05-13_14:27:49.448 [SpringApplicationShutdownHook] INFO  c.n.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-20_00:51:12.966 [main] INFO  o.h.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-20_00:51:13.207 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20_00:51:14.676 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-20_00:51:16.820 [main] WARN  o.s.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-20_00:51:16.956 [main] INFO  o.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-20_00:51:18.678 [main] INFO  o.s.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-20_00:51:18.788 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-20_00:51:19.066 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-20_00:51:19.127 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-20_00:51:19.138 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-20_00:51:19.166 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-20_00:51:19.166 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-20_00:51:19.167 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-20_00:51:19.167 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-20_00:51:19.167 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-20_00:51:19.167 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-20_00:51:19.168 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-20_00:51:20.096 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-20_00:51:20.100 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-20_00:51:20.103 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-20_00:51:20.106 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1747681580104 with initial instances count: 1
+2025-05-20_00:51:20.113 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application POST-SERVICE with eureka with status UP
+2025-05-20_00:51:20.114 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747681580114, current=UP, previous=STARTING]
+2025-05-20_00:51:20.117 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2025-05-20_00:51:20.118 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
+2025-05-20_00:51:20.181 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2025-05-20_00:51:20.185 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8888
+2025-05-20_00:51:20.237 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
+2025-05-20_00:51:20.247 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2025-05-20_00:51:20.728 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5441309e:0/SimpleConnection@18092b96 [delegate=amqp://guest@127.0.0.1:5672/, localPort=51294]
+2025-05-20_00:51:20.744 [main] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-05-20_00:51:20.956 [main] INFO  com.postservice.PostServiceApplication - Started PostServiceApplication in 22.683 seconds (process running for 27.457)
+2025-05-20_00:56:19.174 [AsyncResolver-bootstrap-executor-%d] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-20_00:57:02.062 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20_00:57:02.063 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20_00:57:02.067 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-05-20_01:01:19.190 [AsyncResolver-bootstrap-executor-%d] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-20_01:06:19.196 [AsyncResolver-bootstrap-executor-%d] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-20_02:09:43.556 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+2025-05-20_02:09:43.923 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it
+com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.client.impl.AMQConnection.startShutdown(AMQConnection.java:1007)
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:997)
+	at com.rabbitmq.client.impl.AMQConnection.handleFailure(AMQConnection.java:801)
+	at com.rabbitmq.client.impl.AMQConnection.access$500(AMQConnection.java:48)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:696)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:312)
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:295)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-05-20_02:09:44.432 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@29963f9a: tags=[[amq.ctag-A4HvCkwEH8GwbA7UIyXmtg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@326acc7c Shared Rabbit Connection: SimpleConnection@18092b96 [delegate=amqp://guest@127.0.0.1:5672/, localPort=51294], acknowledgeMode=AUTO local queue size=0
+2025-05-20_02:09:44.598 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2025-05-20_02:09:44.782 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5441309e:1/SimpleConnection@36d5036b [delegate=amqp://guest@127.0.0.1:5672/, localPort=52125]
+2025-05-20_02:09:44.814 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-05-20_02:10:10.157 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m1s129ms281µs800ns).
+2025-05-20_02:11:50.322 [AsyncResolver-bootstrap-executor-%d] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-20_06:53:27.552 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+2025-05-20_06:53:28.062 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] WARN  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it
+com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.client.impl.AMQConnection.startShutdown(AMQConnection.java:1007)
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:997)
+	at com.rabbitmq.client.impl.AMQConnection.handleFailure(AMQConnection.java:801)
+	at com.rabbitmq.client.impl.AMQConnection.access$500(AMQConnection.java:48)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:696)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:312)
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:295)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-05-20_06:53:28.091 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@26a6c909: tags=[[amq.ctag-jZs598euT4TquEzpepHoIA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@326acc7c Shared Rabbit Connection: SimpleConnection@36d5036b [delegate=amqp://guest@127.0.0.1:5672/, localPort=52125], acknowledgeMode=AUTO local queue size=0
+2025-05-20_06:53:28.256 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2025-05-20_06:53:29.030 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5441309e:2/SimpleConnection@73853cc [delegate=amqp://guest@127.0.0.1:5672/, localPort=54270]
+2025-05-20_06:53:29.052 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  org.springframework.amqp.rabbit.core.RabbitAdmin - Auto-declaring a non-durable, auto-delete, or exclusive Queue (myQueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2025-05-20_06:53:31.571 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h40m50s322ms882µs700ns).
+2025-05-20_09:18:13.196 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24m41s625ms139µs600ns).
+2025-05-20_09:18:49.053 [SpringApplicationShutdownHook] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application POST-SERVICE with eureka with status DOWN
+2025-05-20_09:18:49.055 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1747712029055, current=DOWN, previous=UP]
+2025-05-20_09:18:49.055 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888: registering service...
+2025-05-20_09:18:49.091 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-05-20_09:18:49.101 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - registration status: 204
+2025-05-20_09:18:49.730 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-05-20_09:18:49.744 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-20_09:18:49.761 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-20_09:18:49.800 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20_09:18:49.826 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-20_09:18:49.838 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-20_09:18:49.841 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-20_09:18:52.842 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-20_09:18:52.968 [SpringApplicationShutdownHook] INFO  c.n.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -303,8 +209,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 37 more
 
-2025-05-13_14:27:49.449 [SpringApplicationShutdownHook] WARN  c.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
-2025-05-13_14:27:49.492 [SpringApplicationShutdownHook] INFO  c.n.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-20_09:18:52.969 [SpringApplicationShutdownHook] WARN  c.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-20_09:18:52.994 [SpringApplicationShutdownHook] INFO  c.n.discovery.shared.transport.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -382,8 +288,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 38 more
 
-2025-05-13_14:27:49.492 [SpringApplicationShutdownHook] WARN  c.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
-2025-05-13_14:27:49.492 [SpringApplicationShutdownHook] ERROR com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - de-registration failedCannot execute request on any known server
+2025-05-20_09:18:52.994 [SpringApplicationShutdownHook] WARN  c.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-20_09:18:52.995 [SpringApplicationShutdownHook] ERROR com.netflix.discovery.DiscoveryClient - DiscoveryClient_POST-SERVICE/Manjesh-Rayamajhi-esewa:post-service:8888 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -415,4 +321,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-13_14:27:49.494 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-20_09:18:52.997 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

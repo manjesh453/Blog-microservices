@@ -23,7 +23,7 @@ public class AddLikeController {
     }
 
     @PostMapping("/post/add")
-    public String createPost(@RequestParam("image") MultipartFile image, @RequestPart PostRequestDto postDto) throws IOException {
+    public String createPost(@RequestPart("image") MultipartFile image, @RequestPart PostRequestDto postDto) throws IOException {
         return createPost.createPost(image, postDto);
     }
 }

@@ -29,13 +29,13 @@ public class PostController {
     private String path;
 
     @PostMapping("/add")
-    public String createPost(@RequestParam("image") MultipartFile image, @RequestParam PostRequestDto postDto) throws IOException {
+    public String createPost(@RequestPart("image") MultipartFile image, @RequestPart PostRequestDto postDto) throws IOException {
         String filename = fileService.uploadImage(path, image);
         return postService.createPost(postDto, filename);
     }
 
     @PostMapping("/update/{postId}")
-    public String updatePost(@RequestPart PostRequestDto requestDto, @RequestParam("image") MultipartFile image,
+    public String updatePost(@RequestPart PostRequestDto requestDto, @RequestPart("image") MultipartFile image,
                              @PathVariable Long postId) throws IOException {
         String filename = this.fileService.uploadImage(path, image);
         return postService.updatePost(requestDto, filename, postId);
@@ -71,11 +71,11 @@ public class PostController {
         return postService.searchPostsByTitle(keyword);
     }
 
-    @GetMapping(value = "/image/{imageName}",produces=MediaType.IMAGE_JPEG_VALUE )
-    public void downloadImage(@PathVariable("imageName") String imageName,HttpServletResponse response)throws IOException {
-        InputStream resource=this.fileService.getResource(path, imageName);
+    @GetMapping(value = "/image/{imageName}", produces = MediaType.IMAGE_JPEG_VALUE)
+    public void downloadImage(@PathVariable("imageName") String imageName, HttpServletResponse response) throws IOException {
+        InputStream resource = this.fileService.getResource(path, imageName);
         response.setContentType(MediaType.IMAGE_JPEG_VALUE);
-        StreamUtils.copy(resource,response.getOutputStream());
+        StreamUtils.copy(resource, response.getOutputStream());
     }
 
     @GetMapping("/postForUnauthorized")
