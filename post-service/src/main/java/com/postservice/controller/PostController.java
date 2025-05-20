@@ -29,7 +29,7 @@ public class PostController {
     private String path;
 
     @PostMapping("/add")
-    public String createPost(@RequestParam("image") MultipartFile image, @RequestPart PostRequestDto postDto) throws IOException {
+    public String createPost(@RequestParam("image") MultipartFile image, @RequestParam PostRequestDto postDto) throws IOException {
         String filename = fileService.uploadImage(path, image);
         return postService.createPost(postDto, filename);
     }
